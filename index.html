@@ -5,211 +5,354 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Kerolos Farag</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+  <title>Kerolos Farag</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Projects</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+  <!-- Adjust media/content split to ~45/55 and make videos fill their column -->
+  <style>
+    /* Set media column to 45%, content to 55% */
+    #one.spotlights > section .image {
+      width: 45% !important;
+    }
+    #one.spotlights > section .content {
+      width: 55% !important;
+    }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    /* Ensure images fill width, preserve aspect ratio */
+    #one.spotlights .image img {
+      width: 100% !important;
+      height: auto !important;
+      display: block;
+    }
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Kerolos Farag</h1>
-							<p>Hey there, I'm Kerolos - a game enthusiast and developer with a passion for building fun experiences. With a Bachelor's degree in Computer Science and a minor in Mathematics,
-								 I'm an expert problem solver and analytical thinker who loves turning ideas into reality.
-								When I'm not busy with work, you'll find me tinkering away on exciting projects. 
-								I have a proven track record of designing and maintaining video games using agile software development practices.
-								Whether I'm coding up a storm or experimenting with new game mechanics, I approach every challenge with enthusiasm and a sense of adventure.
-								 I'm always seeking ways to push the boundaries and create engaging experiences. let's buckle up and get ready to bring your wildest ideas to life!</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">PROJECTS</a></li>
-							</ul>
-						</div>
-					</section>
-					
-					<section id="one" class="wrapper style2 spotlights">
+    /* Ensure videos stretch to fill their container (no gap) */
+    #one.spotlights .image video {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: fill !important;
+      display: block;
+    }
 
-						<section>
-							<a target="_blank" class="image"><img src="images/PCG.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Infinite Universe PCG simulation</h2>
-									<p>A procedurally generated infinite universe simulation implemented in C++, featuring procedurally generated star systems, each with its own planets and moons.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/ksfarag/InfiniteUniversePCG/archive/refs/heads/main.zip" target="_blank" class="button">Download</a></li>
-										<li><a href="https://github.com/ksfarag/InfiniteUniversePCG" target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
+    /* Apply same font sizing to all Spandrel projects */
+    #one.spotlights > section:nth-of-type(1) .content .inner p,
+    #one.spotlights > section:nth-of-type(2) .content .inner p,
+    #one.spotlights > section:nth-of-type(3) .content .inner p,
+    #one.spotlights > section:nth-of-type(4) .content .inner p {
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
 
-						<section>
-							<a target="_blank" class="image"><img src="images/pic01.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Tactical Blast VR</h2>
-									<p>VR shooter game based on Unity XR toolkit, featuring an immersive arena. Players can engage enemy AI or practice target shooting in the range.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/ksfarag/TacticalBlastVR" target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						
-						
-						<section>
-							<a href="https://simmer.io/@ker0/funvania" target="_blank" class="image"><img src="images/FunVania.jpeg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Fun Vania</h2>
-									<p>A multi-level sidescrolling 2D platformer developed using Unity for Web and Mobile.</p>
-									<ul class="actions">
-										<li><a href="https://simmer.io/@ker0/funvania" target="_blank" class="button">Play here</a></li>
-										<li><a href="https://github.com/ksfarag/FunVania" target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>						
-						
-						<section>
-							<a target="_blank" class="image"><img src="images/Boom.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>BoomBoomJump</h2>
-									<p>A 2D platformer fully written in C++ using SFML API. The game features multiple enemy AI types, a custom level editor, and a final boss fight.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/ksfarag/BoomBoomJump/archive/refs/heads/main.zip" class="button">Download</a></li>
-										<li><a href="https://github.com/ksfarag/BoomBoomJump" target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-												
-						<section>
-							<a target="_blank" class="image"><img src="images/MLProject.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Heart Disease prediction model</h2>
-									<p>Applied Machine Learning methods and data preparation techniques to pre-process and manipulate raw medical data and construct multiple predictive models.        
-										<br> Technologies used: Python (pandas, NumPy, matplotlib, scikit-learn)</p>
-									<ul class="actions">
-										<li><a href="https://www.kaggle.com/code/youssefmohamed21/heart-disease-prediction-using-ml" target="_blank" class="button">Visit Website</a></li>
-										<li><a href="https://github.com/ksfarag/Heart-Disease-Prediction-Using-ML" target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>						
-						<section>
-							<a target="_blank" class="image"><img src="images/star-craft-brood-war.avif" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Zealot Craft</h2>
-									<p>An AI bot for StarCraft, implemented in C++ using the Brood War API. The bot is capable of defeating StarCraft's built-in AI.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/ksfarag/ZealotCraft/archive/refs/heads/main.zip" target="_blank" class="button">Download</a></li>
-										<li><a href="https://github.com/ksfarag/ZealotCraft" target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>		
+    /* Center project headers */
+    #one.spotlights > div.inner {
+      background-color: #312450;
+      padding: 1.5em 0;
+    }
+    #one.spotlights > div.inner > h2 {
+      color: #ffffff;
+      text-align: center;
+      margin: 0;
+    }
+  </style>
+</head>
+<body class="is-preload">
 
-						<section>
-							<a target="_blank" class="image"><img src="images/BlockBreaking.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Block Breaker</h2>
-									<p> Block Breaker is a Multi-level arcade style game that was developed using Unity engine for web.</p>
-									<ul class="actions">
-										<li><a href="https://simmer.io/@ker0/blockbreaker" target="_blank" class="button">Play Here</a></li>
-										<li><a href="https://github.com/ksfarag/BlockBreaker" target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>		
+  <!-- Sidebar -->
+  <section id="sidebar">
+    <div class="inner">
+      <nav>
+        <ul>
+          <li><a href="#intro">Welcome</a></li>
+          <li><a href="#one">Projects</a></li>
+          <li><a href="#three">Get in touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
 
-						<section>
-							<a target="_blank" class="image"><img src="images/Rescure.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Rescuer</h2>
-									<p>Side-Scrolling game demo that was created during the 2018 Global Game Jam event using C# and Unity WebGL</p>
-									<ul class="actions">
-										<li><a href="https://ksfarag.github.io/RescuerDemo2D/" target="_blank" class="button">Play Here</a></li>
-										<li><a href="https://github.com/ksfarag/RescuerDemo2D" target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>				
-					</section>
+  <!-- Wrapper -->
+  <div id="wrapper">
 
+    <!-- Intro -->
+    <section id="intro" class="wrapper style1 fullscreen fade-up">
+      <div class="inner">
+        <h1>Kerolos Farag</h1>
+        <p>Hey there, I'm Kerolos - a game enthusiast and developer with a passion for building fun experiences. With a Bachelor's degree in Computer Science and a minor in Mathematics,
+          I'm an expert problem solver and analytical thinker who loves turning ideas into reality.
+          When I'm not busy with work, you'll find me tinkering away on exciting projects.
+          I have a proven track record of designing and maintaining video games using agile software development practices.
+          Whether I'm coding up a storm or experimenting with new game mechanics, I approach every challenge with enthusiasm and a sense of adventure.
+          I'm always seeking ways to push the boundaries and create engaging experiences. Let's buckle up and get ready to bring your wildest ideas to life!</p>
+        <ul class="actions">
+          <li><a href="#one" class="button scrolly">PROJECTS</a></li>
+        </ul>
+      </div>
+    </section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Please feel free to contact me anytime.</p>
-							<div >
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Email</h3>
-											<a href="mailto:kerolosf@outlook.com">kerolosf@outlook.com</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(709) 219-0630</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a target="_blank" href="https://github.com/ksfarag" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a target="_blank" href="https://www.linkedin.com/in/kerofarag" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+    <!-- Projects -->
+    <section id="one" class="wrapper style2 spotlights">
 
-			</div>
+      <!-- Spandrel header -->
+      <div class="inner">
+        <h2>Spandrel Interactive Projects</h2>
+      </div>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+      <!-- 1) IV Insertion Trainer -->
+      <section>
+        <a target="_blank" class="image">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipO80puwQBXjJuW7_wEpjiOGHnlJpZ8YvL0MJi3G=s680-w680-h510-rw" alt="IV Insertion Trainer" data-position="center center" />
+        </a>
+        <div class="content">
+          <div class="inner">
+            <h2>IV Insertion Trainer</h2>
+            <p>Led the development of an immersive XR IV Insertion Trainer that uses high-fidelity, AI-driven patient models to simulate realistic clinical scenarios. Integrated dynamic AI-powered NPCs with live voice responses and adaptive animations, enabling healthcare professionals to practice needle insertion and realistic patient interactions within a safe Extended Reality environment.</p>
+            <ul class="actions">
+              <li><a href="https://spandrelinteractive.com/" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <!-- 2) Falls Prevention -->
+      <section>
+        <a href="https://spandrelinteractive.com/" target="_blank" class="image">
+          <video src="https://spandrelinteractive.com/Images/Videos/Falls.mp4" autoplay muted loop playsinline alt="Falls Prevention VR demo"></video>
+        </a>
+        <div class="content">
+          <div class="inner">
+            <h2>Falls Prevention VR</h2>
+            <p>Spearheaded the development of an immersive Virtual Reality training tool for Meta Quest headsets, designed to help older adults improve balance and reduce fall risk. Developed a comprehensive suite of simulated exercises, including a virtual obstacle course, now deployed in clinical and academic research studies.</p>
+            <ul class="actions">
+              <li><a href="https://spandrelinteractive.com/" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-	</body>
+      <!-- 3) Project Genius -->
+      <section>
+        <a href="https://spandrelinteractive.com/" target="_blank" class="image">
+          <video src="https://spandrelinteractive.com/Images/Videos/SXR.mp4" autoplay muted loop playsinline alt="Project Genius VR demo"></video>
+        </a>
+        <div class="content">
+          <div class="inner">
+            <h2>De‑Escalation VR Simulation</h2>
+            <p>Developed AI-driven VR simulation scenarios for frontline staff, spanning workplace harassment, domestic violence, and nursing home care. Leveraged custom architecture to power dynamic AI-driven avatars that simulate real scenarios. These avatars adapt in real time to deliver highly realistic training experiences.</p>
+            <ul class="actions">
+              <li><a href="https://spandrelinteractive.com/" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4) All the Right Moves VR -->
+      <section>
+        <a href="https://spandrelinteractive.com/" target="_blank" class="image">
+          <video src="https://spandrelinteractive.com/Images/Videos/ATRM.mp4" autoplay muted loop playsinline alt="All the Right Moves VR demo"></video>
+        </a>
+        <div class="content">
+          <div class="inner">
+            <h2>All the Right Moves VR</h2>
+            <p>All the Right Moves is a self‑guided VR training suite for nursing home staff, featuring a hand‑washing simulator with real‑time feedback and a digital twin–powered Arjo 9000 bed module. Both modules provide guided practice and performance tracking for compliance and continuous improvement.</p>
+            <ul class="actions">
+              <li><a href="https://spandrelinteractive.com/" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carnegie Learning header -->
+      <div class="inner">
+        <h2>Carnegie Learning Projects</h2>
+      </div>
+
+      <!-- Mathstoria -->
+      <section>
+        <a target="_blank" class="image"><img src="images/Mathstoria.png" alt="Mathstoria" data-position="center center" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Mathstoria</h2>
+            <p>Developed and shipped Mathstoria, an educational math game for kids built in Unity for WebGL. Worked on a wide range of features and optimizations to ensure smooth performance and a successful launch, helping improve engagement and learning outcomes for thousands of students.</p>
+            <ul class="actions">
+              <li><a href="https://www.carnegielearning.ca/math" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Personal header -->
+      <div class="inner">
+        <h2>Personal Projects</h2>
+      </div>
+
+      <!-- VR Fishing Simulator (new first personal project) -->
+      <section>
+        <a target="_blank" class="image"><img src="images/FishingVid.gif" alt="VR Fishing Simulator" data-position="center center" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>VR Fishing Simulator</h2>
+            <p>Developed an immersive VR fishing experience for Meta Quest using Unity and Meta SDK. Built a detailed fishing village with realistic boat paddling and fishing physics, complemented by dynamic interactions. The game features a large, optimized island scene for smooth performance. Players can catch a variety of fish from the dock or venture into deep waters for rare species. Designed with a scalable architecture to support future expansions and integrations.</p>
+            <ul class="actions">
+              <li><a href="https://github.com/ksfarag" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Personal Projects continue -->
+      <section>
+        <a target="_blank" class="image"><img src="images/PCG.png" alt="" data-position="center center" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Infinite Universe PCG simulation</h2>
+            <p>A procedurally generated infinite universe simulation implemented in C++, featuring procedurally generated star systems, each with its own planets and moons.</p>
+            <ul class="actions">
+              <li><a href="https://github.com/ksfarag/InfiniteUniversePCG/archive/refs/heads/main.zip" target="_blank" class="button">Download</a></li>
+              <li><a href="https://github.com/ksfarag/InfiniteUniversePCG" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <a target="_blank" class="image"><img src="images/pic01.png" alt="" data-position="center center" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Tactical Blast VR</h2>
+            <p>VR shooter game based on Unity XR toolkit, featuring an immersive arena. Players can engage enemy AI or practice target shooting in the range.</p>
+            <ul class="actions">
+              <li><a href="https://github.com/ksfarag/TacticalBlastVR" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <a href="https://simmer.io/@ker0/funvania" target="_blank" class="image"><img src="images/FunVania.jpeg" alt="" data-position="center center" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Fun Vania</h2>
+            <p>A multi-level sidescrolling 2D platformer developed using Unity for Web and Mobile.</p>
+            <ul class="actions">
+              <li><a href="https://simmer.io/@ker0/funvania" target="_blank" class="button">Play here</a></li>
+              <li><a href="https://github.com/ksfarag/FunVania" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <a target="_blank" class="image"><img src="images/Boom.png" alt="" data-position="center center" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>BoomBoomJump</h2>
+            <p>A 2D platformer fully written in C++ using SFML API. The game features multiple enemy AI types, a custom level editor, and a final boss fight.</p>
+            <ul class="actions">
+              <li><a href="https://github.com/ksfarag/BoomBoomJump/archive/refs/heads/main.zip" class="button">Download</a></li>
+              <li><a href="https://github.com/ksfarag/BoomBoomJump" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <a target="_blank" class="image"><img src="images/MLProject.jpg" alt="" data-position="center center" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Heart Disease prediction model</h2>
+            <p>Applied Machine Learning methods and data preparation techniques to pre-process and manipulate raw medical data and construct multiple predictive models.<br>Technologies used: Python (pandas, NumPy, matplotlib, scikit-learn)</p>
+            <ul class="actions">
+              <li><a href="https://www.kaggle.com/code/youssefmohamed21/heart-disease-prediction-using-ml" target="_blank" class="button">Visit Website</a></li>
+              <li><a href="https://github.com/ksfarag/Heart-Disease-Prediction-Using-ML" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <a target="_blank" class="image"><img src="images/star-craft-brood-war.avif" alt="" data-position="center center" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Zealot Craft</h2>
+            <p>An AI bot for StarCraft, implemented in C++ using the Brood War API. The bot is capable of defeating StarCraft's built-in AI.</p>
+            <ul class="actions">
+              <li><a href="https://github.com/ksfarag/ZealotCraft/archive/refs/heads/main.zip" class="button">Download</a></li>
+              <li><a href="https://github.com/ksfarag/ZealotCraft" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <a target="_blank" class="image"><img src="images/BlockBreaking.png" alt="" data-position="center center" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Block Breaker</h2>
+            <p>Block Breaker is a Multi-level arcade style game that was developed using Unity engine for web.</p>
+            <ul class="actions">
+              <li><a href="https://simmer.io/@ker0/blockbreaker" target="_blank" class="button">Play Here</a></li>
+              <li><a href="https://github.com/ksfarag/BlockBreaker" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <a target="_blank" class="image"><img src="images/Rescure.png" alt="" data-position="center center" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Rescuer</h2>
+            <p>Side-Scrolling game demo that was created during the 2018 Global Game Jam event using C# and Unity WebGL</p>
+            <ul class="actions">
+              <li><a href="https://ksfarag.github.io/RescuerDemo2D/" class="button">Play Here</a></li>
+              <li><a href="https://github.com/ksfarag/RescuerDemo2D" target="_blank" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper style1 fade-up">
+      <div class="inner">
+        <h2>Get in touch</h2>
+        <p>Please feel free to contact me anytime.</p>
+        <ul class="contact">
+          <li><h3>Email</h3><a href="mailto:kerolosf@outlook.com">kerolosf@outlook.com</a></li>
+          <li><h3>Phone</h3><span>(709) 219-0630</span></li>
+          <li><h3>Social</h3>
+            <ul class="icons">
+              <li><a target="_blank" href="https://github.com/ksfarag" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/in/kerofarag" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="wrapper style1-alt">
+    <div class="inner">
+      <ul class="menu">
+        <li>&copy; Untitled. All rights reserved.</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
 </html>
